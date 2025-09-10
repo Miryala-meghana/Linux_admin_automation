@@ -29,9 +29,19 @@ Logs will be created inside the logs/ folder.
 
 cat logs/health_*.log
 
-
+-------------------------------------------------------
 Automation with Cron
+->Step 1: Install cron
+apt update -y
+apt install cron -y
+->Step 2: Enable and start cron service
+systemctl enable cron
+systemctl start cron
 
+->Check if it’s running:
+
+systemctl status cron
+--------------------------------------------------------
 To run the script automatically at regular intervals:
 
 Open the cron editor:
