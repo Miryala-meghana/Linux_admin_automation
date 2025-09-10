@@ -29,7 +29,7 @@ ps -eo pid,comm,%mem,%cpu --sort=-%cpu | head -n 11
 
 echo -e "\n network connections"
 
-ss -tuln |head -n 10
+netstat -nr
 
 echo "\n *****Report Generated successfully*********"
 
