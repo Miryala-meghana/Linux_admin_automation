@@ -1,0 +1,61 @@
+***************welcome to AUtomatated system health check logs  ******
+Date: Wed Sep 10 11:33:29 EDT 2025 
+
+[CPU LOAD]
+ 11:33:29 up  1:55,  0 user,  load average: 9.90, 12.74, 12.18
+
+ [MOMERY USAGE]
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        24Gi       2.6Gi       542Mi        36Gi        38Gi
+Swap:             0B          0B          0B
+
+[DISK USAGE]
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         737G  216G  484G  31% /
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+tmpfs            64M     0   64M   0% /dev
+tmpfs            32G   52K   32G   1% /run
+tmpfs            32G     0   32G   0% /run/lock
+tmpfs            32G   12M   32G   1% /var/log/journal
+shm              64M     0   64M   0% /dev/shm
+/dev/root        20G   11G  8.8G  55% /etc/hosts
+tmpfs           6.3G   14M  6.3G   1% /etc/hostname
+tmpfs           3.8G   12K  3.8G   1% /run/secrets/kubernetes.io/serviceaccount
+/dev/md127      737G  216G  484G  31% /var/lib/k0s
+tmpfs            32G     0   32G   0% /proc/acpi
+tmpfs            32G     0   32G   0% /proc/scsi
+tmpfs            32G     0   32G   0% /sys/firmware
+tmpfs            32G     0   32G   0% /sys/devices/virtual/powercap
+
+[TOP 10 PROCESSES USING HIGH MOMERY]
+    PID COMMAND         %MEM %CPU
+      1 systemd          0.0  0.0
+    321 systemd-journal  0.0  0.0
+   1795 bash             0.0  0.0
+   5136 ps               0.0  0.0
+   5129 systemhealthche  0.0  0.0
+   1749 bash             0.0  0.0
+   4158 cron             0.0  0.0
+    903 sshd             0.0  0.0
+    852 dbus-daemon      0.0  0.0
+    876 systemd-logind   0.0  0.0
+
+[TOP 10 PROCESSES USING HIGH CPU]
+    PID COMMAND         %MEM %CPU
+    913 ttyd             0.0  0.0
+      1 systemd          0.0  0.0
+    876 systemd-logind   0.0  0.0
+   1795 bash             0.0  0.0
+   1784 script           0.0  0.0
+   1786 sudo             0.0  0.0
+    321 systemd-journal  0.0  0.0
+    852 dbus-daemon      0.0  0.0
+   4158 cron             0.0  0.0
+   1749 bash             0.0  0.0
+
+ network connections
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         169.254.1.1     0.0.0.0         UG        0 0          0 eth0
+169.254.1.1     0.0.0.0         255.255.255.255 UH        0 0          0 eth0
+\n *****Report Generated successfully*********
